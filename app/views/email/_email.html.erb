@@ -1,0 +1,4 @@
+
+	<h2> <%= @email.object %></h2>
+	<p> <%= @email.body %></p>
+<%= link_to "delete", email_path(@email.id), method: "delete", remote: true, class: "link" %>

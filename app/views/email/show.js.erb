@@ -1,0 +1,3 @@
+console.log("coucou")
+document.querySelector(".pouet").innerHTML = "";
+document.querySelector(".pouet").insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email.save %>")

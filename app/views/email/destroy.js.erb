@@ -1,0 +1,4 @@
+console.log("coucou")
+document.querySelector(".pouet").innerHTML = "";
+document.querySelector(".pouet2").innerHTML = "";
+document.querySelector(".pouet2").insertAdjacentHTML("beforeend", "<%= j render 'del', email: @email %>")
