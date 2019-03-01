@@ -4,7 +4,11 @@
  	<div class="pouet2">
 		<ul>
 		  <% @email.each do |email| %>
-		    <li><%= link_to email.object, email_path(email.id), method: "get", remote: true, class: "link" %>
+        <% if email.lue %>
+         <li><%= link_to email.object, email_path(email.id), method: "get", remote: true, class: "link text-success"%></li>
+        <% else %>
+        <li><%= link_to email.object, email_path(email.id), method: "get", remote: true, class: "link" %></li>
+        <% end %>
 		  <% end %>
 		</ul>
 	</div>
@@ -15,4 +19,4 @@
    		
    	</div>
   </div>
-</div>
+</div

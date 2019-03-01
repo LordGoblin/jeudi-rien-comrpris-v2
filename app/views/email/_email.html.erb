@@ -1,4 +1,11 @@
 
 	<h2> <%= @email.object %></h2>
 	<p> <%= @email.body %></p>
+	<% if @email.lue %>
+		<p>	email deja lue </p>
+	<% end %>
+	<% @email.lue = "true" %>
+    <% @email.save %>
 <%= link_to "delete", email_path(@email.id), method: "delete", remote: true, class: "link" %>
+
+<script href="index.js.erb"></script>

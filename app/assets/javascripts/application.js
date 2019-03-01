@@ -16,6 +16,8 @@
 //= turbolinks
 //= require_tree .
 
+
+
 $(document).ready(() => {
     $('.appear').hide();
     $(".show").click(function() {
